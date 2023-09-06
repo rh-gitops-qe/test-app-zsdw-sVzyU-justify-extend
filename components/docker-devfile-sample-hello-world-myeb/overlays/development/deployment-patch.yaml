@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docker-devfile-sample-hello-world-myeb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh-gitops-bot/build-e2e-qbwr-tenant/test-app-zsdw/docker-devfile-sample-hello-world-myeb@sha256:8b4c97b75aab70a571968dd6a804d80c22207c77b8eafcc9338a47aca1373630
+        name: container-image
+        resources: {}
+status: {}
